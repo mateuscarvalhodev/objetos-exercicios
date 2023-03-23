@@ -23,11 +23,19 @@ const ataques = [
 
 pokemon1.ataques.push(...ataques);
 
+const jatoDeAgua = {
+    nome: 'Jato de Água',
+    dano: 40,
+    tipo: 'Água',
+    precisao: 100
+  };
+
 const pokemon2 = {
     nome: 'Squirtle',
 	tipo: 'Agua',
 	nivel: 5,
     ataques: [...pokemon1.ataques]
 }
+pokemon2.ataques.push(jatoDeAgua);
 
 console.log(pokemon1, pokemon2);
