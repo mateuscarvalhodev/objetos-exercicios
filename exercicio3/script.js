@@ -7,10 +7,10 @@ const pokemon1 = {
 
 const ataques = [
     {
-    nome: 'Investida',
-    dano: 40,
-    tipo: 'Normal',
-    precisao: 100
+        nome: 'Investida',
+        dano: 40,
+        tipo: 'Normal',
+        precisao: 100
     },
     {
         nome: 'Folha Navalha',
