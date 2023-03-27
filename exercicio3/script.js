@@ -17,25 +17,26 @@ const ataques = [
         dano: 45,
         tipo: 'grama',
         precisao: 100
+    },
+    {
+        nome: 'Jato de Água',
+        dano: 40,
+        tipo: 'Água',
+        precisao: 100
     }
 
 ]
 
-pokemon1.ataques.push(...ataques);
+pokemon1.ataques.push(ataques[0]);
+pokemon1.ataques.push(ataques[1]);
 
-const jatoDeAgua = {
-    nome: 'Jato de Água',
-    dano: 40,
-    tipo: 'Água',
-    precisao: 100
-  };
 
 const pokemon2 = {
     nome: 'Squirtle',
 	tipo: 'Agua',
 	nivel: 5,
-    ataques: [...pokemon1.ataques]
+    ataques: [pokemon1.ataques[0]]
 }
-pokemon2.ataques.push(jatoDeAgua);
+pokemon2.ataques.push(ataques[2])
 
 console.log(pokemon1, pokemon2);
